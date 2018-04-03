@@ -1,0 +1,15 @@
+- buat sebuah function untuk memproses/memeriksa suatu string terdiri dari huruf vokal semua atau tidak.
+
+- buat sebuah variable string dengan value huruf vokal ('aiueo').
+
+- lakukan perulangan dengan variable "i" = 0 sebanyak jumlah input string yang diterima.
+
+  * buat sebuah kondisi menggunakan build in function "indexOf":
+
+    # jika string index ke "i" tidak terdapat di dalam variable string vokal, maka :
+
+      => return false
+
+    # jika proses perulangan telah selesai dan function belum mengembalikan nilai false, maka :
+
+      => return true

@@ -11,13 +11,13 @@ let isVowel = function (c) {
 }
 
 function checkAllVowels(s) {
-  let IsallVowel = true;
+  let isAllVowel = true;
   for (let i of s) {
     if (!isVowel(i)) {
-      IsallVowel = false;
+      isAllVowel = false;
     } 
   }
-  return IsallVowel;
+  return isAllVowel;
 }
 
 // driver code

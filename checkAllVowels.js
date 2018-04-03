@@ -4,7 +4,7 @@ function checkAllVowels(str) {
 
     for (let i = 0; i < str.length; i++) {
         for (let j = 0; j < vowels.length; j++) {
-            if (str[i] === vowels[j]) {
+            if (str[i].toLowerCase() === vowels[j]) {
                 counter++;
             }
         }
@@ -13,6 +13,6 @@ function checkAllVowels(str) {
     return counter === str.length;
 }
 
-console.log(checkAllVowels('aaaaa')); // true
+console.log(checkAllVowels('aaaaAE')); // true
 console.log(checkAllVowels('sdmau')); // false
 console.log(checkAllVowels('aiueo')); // true

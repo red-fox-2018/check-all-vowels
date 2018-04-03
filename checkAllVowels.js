@@ -1,1 +1,18 @@
+function checkAllVowels(str) {
+    let vowels = 'aiueo';
+    let counter = 0;
 
+    for (let i = 0; i < str.length; i++) {
+        for (let j = 0; j < vowels.length; j++) {
+            if (str[i] === vowels[j]) {
+                counter++;
+            }
+        }
+    }
+
+    return counter === str.length;
+}
+
+console.log(checkAllVowels('aaaaa')); // true
+console.log(checkAllVowels('sdmau')); // false
+console.log(checkAllVowels('aiueo')); // true
